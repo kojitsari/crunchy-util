@@ -111,7 +111,7 @@ def launch_streamlink(episode, quality, cr_user, cr_pass, playlist):
                 play_url = elem['url']
             else:
                 continue
-        cmd = f'streamlink {play_url} {quality} --crunchyroll-username= {cr_user} --crunchyroll-password= {cr_pass}'
+        cmd = f'streamlink {play_url} {quality} --crunchyroll-username={cr_user} --crunchyroll-password={cr_pass}'
         Popen(cmd)
 
 if __name__ == "__main__":
