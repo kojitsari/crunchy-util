@@ -130,3 +130,5 @@ dmypy.json
 
 # json storage
 *.json
+*.toml
+*.db
